@@ -1,0 +1,171 @@
+
+.work-sans-font{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* shared */
+.bg-color{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.dark-2{
+    color: rgba(66, 66, 66, 1);
+}
+.dark-3{
+    color: rgba(114, 114, 114, 1);
+}
+.btn-primary{
+    background-color: rgba(255, 144, 14, 1);
+    padding: 21px 24px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+/* .......... */
+
+
+
+
+header{
+    
+    background-color: rgba(255, 144, 14, 0.1);
+    margin-bottom: 85px;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 63px 240px 0px 228px; */
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+
+}
+.nav-item{
+    list-style: none;
+    
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 800px;
+}
+
+.banner{
+    text-align: center;
+    max-width: 862px;
+    
+     
+}
+.brand{
+    font-size: 2.5em;
+}
+
+.nav-bar , .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* banner  */
+
+
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    
+}
+.brand-title{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.banner-image{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* section quick */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.quick{
+    
+    max-width: 1318px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.image-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 708px;
+}
+.quick-text{
+    
+    max-width: 537px;
+    margin: 0 auto;
+    
+}
+.quick-title{
+    font-size: 2.5rem;
+    max-width: 485px;
+}
+
+.quick-des{
+    font-size: 16px;
+    margin-bottom: 32px;
+
+}
+
+/* responsive media query */
+
+
+
+/* Shared styles */
+.display-flex{
+    display: flex;
+}
+
+/* for mobile  */
+
+@media screen and (max-width: 576px) {
+    .nav-bar , .nav-link{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .quick{
+        flex-direction: column;
+    }
+    .image-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+
+    
+}
+
+/* for tablet */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .quick{
+        flex-direction: column;
+    }
+ 
+    
+}

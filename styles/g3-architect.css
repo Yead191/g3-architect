@@ -171,6 +171,58 @@ main{
     font-weight: 550;
     margin-top: 10px;
 }
+
+
+/* Our sponsor */
+
+.sponsor-info{
+    max-width: 542px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsor-companies{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+.sponsor-companies img{
+    filter: grayscale(100%);
+}
+
+
+/* feature section styles */
+.features{
+    justify-content: space-between;
+}
+.f-text{
+    max-width: 586px;
+}
+.f-title{
+    border-left: 5px solid rgba(255, 144, 14, 1);
+    padding-left: 20px;
+    max-width: 468px;
+}
+.fc-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0px;
+    
+}
+.f-des{
+    margin-bottom: 0px;
+}
+.feature-card{
+    padding: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    
+
+}
+
+
+
 /* responsive media query */
 
 
@@ -196,11 +248,18 @@ main{
         gap: 20px;
     }
 
-    .facts-container{
+    .facts-container
+{
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
-        margin-left: 20%;
+        justify-items: center;
+        /* margin-left: 20%; */
        
+    }
+    .sponsor-companies{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        justify-items: center;
     }
 
 
@@ -222,7 +281,7 @@ main{
     .facts-container{
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        margin-left: 10%;
+        justify-items: center;
     }
     .section-title{
         text-align: center;
@@ -231,5 +290,11 @@ main{
         max-width: fit-content;
         text-align: center;
         margin-left: 15%;
+        
+    }
+    .sponsor-companies{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        justify-items: center;
     }
 }
